@@ -1,0 +1,34 @@
+{
+  "model_type": "TF-IDF + Balanced Naive Bayes",
+  "task": "informative",
+  "classes": [
+    "informative",
+    "not_informative"
+  ],
+  "random_seed": 42,
+  "train_samples": 13608,
+  "test_samples": 2237,
+  "training_time_seconds": 0.55,
+  "metrics": {
+    "dev_accuracy": 0.7009,
+    "dev_macro_f1": 0.6709,
+    "test_accuracy": 0.7179,
+    "test_macro_f1": 0.6919,
+    "test_weighted_f1": 0.7123
+  },
+  "per_class_metrics": {
+    "informative": {
+      "precision": 0.745,
+      "recall": 0.8216,
+      "f1-score": 0.7814,
+      "support": 1373
+    },
+    "not_informative": {
+      "precision": 0.6611,
+      "recall": 0.5532,
+      "f1-score": 0.6024,
+      "support": 864
+    }
+  },
+  "model_file": "baseline_informative.json"
+}
